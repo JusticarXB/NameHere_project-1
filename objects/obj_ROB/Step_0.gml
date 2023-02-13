@@ -12,10 +12,16 @@ var move = move_right - move_left;
 
 hspd = move * mv_spd;
 
-vspd+= grv;
+vspd += grv;
+
+//One way platform collision detection
+if(!move_down)scr_oneWayCollision(obj_oneWay);
 
 //jump collision
-if(place_meeting(x,y+1, obj_block) || place_meeting(x,y+1,obj_oneWay) &&  (move_up || jump)) vspd -= jmp_spd;
+if(jump || move_up) scr_calculateJump(obj_ROB);
+
+//Collision detection
+scr_collisionDetection(obj_ROB);
 
 
 
