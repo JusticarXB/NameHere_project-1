@@ -15,5 +15,14 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_vertical","order":4,"path":"objects/obj_vertical/obj_vertical.yy",},
+    {"name":"obj_oneWay","order":2,"path":"objects/obj_oneWay/obj_oneWay.yy",},
+    {"name":"spr_horizontal","order":3,"path":"sprites/spr_horizontal/spr_horizontal.yy",},
+    {"name":"spr_blk","order":1,"path":"sprites/spr_blk/spr_blk.yy",},
+    {"name":"spr_oneWay","order":2,"path":"sprites/spr_oneWay/spr_oneWay.yy",},
+    {"name":"spr_vertical","order":4,"path":"sprites/spr_vertical/spr_vertical.yy",},
+    {"name":"obj_horizontal","order":3,"path":"objects/obj_horizontal/obj_horizontal.yy",},
+    {"name":"obj_block","order":1,"path":"objects/obj_block/obj_block.yy",},
+  ],
 }
