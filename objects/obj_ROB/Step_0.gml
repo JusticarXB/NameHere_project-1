@@ -1,6 +1,6 @@
 
 #region movement controls
-
+if(hasControl){
 jump = keyboard_check_pressed(vk_space);
 move_up = keyboard_check_pressed(ord("W"));
 move_right = keyboard_check(ord("D"));
@@ -19,7 +19,13 @@ if(!move_down)scr_oneWayCollision(obj_oneWay);
 
 //jump collision
 if(jump || move_up) scr_calculateJump(obj_ROB);
-
+}else {
+	move_up = 0;
+	move_right = 0;
+	move_left= 0;
+	jump = 0;
+	move_down = 0;
+}
 //Collision detection
 scr_collisionDetection(obj_ROB);
 
