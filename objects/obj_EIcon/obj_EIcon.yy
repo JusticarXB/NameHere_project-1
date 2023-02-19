@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
-  "eventList": [],
+  "name": "obj_EIcon",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obstacles",
-    "path": "folders/Objects/obstacles.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_blk",
-    "path": "sprites/spr_blk/spr_blk.yy",
+    "name": "spr_EInteract",
+    "path": "sprites/spr_EInteract/spr_EInteract.yy",
   },
   "spriteMaskId": null,
   "visible": true,

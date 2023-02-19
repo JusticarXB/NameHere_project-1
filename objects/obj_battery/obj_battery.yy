@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_battery",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obstacles",
-    "path": "folders/Objects/obstacles.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_interactParent",
+    "path": "objects/obj_interactParent/obj_interactParent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_blk",
-    "path": "sprites/spr_blk/spr_blk.yy",
+    "name": "spr_battery",
+    "path": "sprites/spr_battery/spr_battery.yy",
   },
   "spriteMaskId": null,
   "visible": true,
