@@ -1,7 +1,7 @@
 
 
 //update destination
-if(instance_exists(obj_ROB)){
+if(!global.gameOver){
 
 xTo = follow.x;
 yTo = follow.y;

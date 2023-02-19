@@ -14,6 +14,9 @@ hspd = move * mv_spd;
 
 vspd += grv;
 
+if(move_left) image_xscale = -1;
+if(move_right) image_xscale = 1;
+
 //One way platform collision detection
 if(!move_down)scr_oneWayCollision(obj_oneWay);
 

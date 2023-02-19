@@ -1,6 +1,7 @@
 //Set-up
 name = "Interactable Object";
 sprite = spr_interactExample;
+item = obj_interactParent;
 
 //Collision & gravity
 hspd = 0;
@@ -14,6 +15,7 @@ switch(object_index){
 		
 		name = "Battery";
 		sprite = spr_battery;
+		item = obj_battery;
 		
 	break;
 
