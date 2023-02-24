@@ -5,6 +5,8 @@ draw_set_font(fnt_earlyGameboy);
 draw_set_alpha(.5);
 draw_set_halign(fa_center);
 
+//Current health
+if(!global.gameOver) draw_text(150, 50, "Health: " + string(obj_ROB.plyr_hlth));
 
 //Held Item Box
 draw_rectangle(room_width - 150,50,room_width -50,150,false);
@@ -13,10 +15,14 @@ draw_rectangle(room_width - 150,50,room_width -50,150,false);
 draw_set_alpha(1);
 draw_set_color(c_black);
 
+
+
+// current Item
 draw_text(room_width - 100, 175, global.itemName);
 draw_sprite(global.item,0,room_width-100,100);
 
-//death screen
+#region Death Screen
+
 if(!instance_exists(obj_ROB)){
 
 	//fades screen to black
@@ -43,3 +49,4 @@ if(!instance_exists(obj_ROB)){
 	}
 
 }
+#endregion

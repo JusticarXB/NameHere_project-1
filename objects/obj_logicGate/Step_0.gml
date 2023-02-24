@@ -1,0 +1,1 @@
+if(global.logicGate) instance_destroy();

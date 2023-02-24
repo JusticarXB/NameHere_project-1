@@ -1,4 +1,6 @@
 
+if(plyr_hlth <= 0) instance_destroy();
+
 #region movement controls
 if(hasControl){
 jump = keyboard_check_pressed(vk_space);
@@ -20,6 +22,15 @@ if(move_right) image_xscale = 1;
 //One way platform collision detection
 if(!move_down)scr_oneWayCollision(obj_oneWay);
 
+//Directional collision
+scr_directionalCollision();
+
+if(is_hit){ 
+		alarm[0] = game_get_speed(gamespeed_fps)/4;
+		if(image_alpha > .6)image_alpha -= alarm_get(0)/20;
+	}
+
+
 //jump collision
 if(jump || move_up) scr_calculateJump(obj_ROB);
 }else {
@@ -28,7 +39,9 @@ if(jump || move_up) scr_calculateJump(obj_ROB);
 	move_left= 0;
 	jump = 0;
 	move_down = 0;
+	vspd+=grv;
 }
+
 //Collision detection
 scr_collisionDetection(obj_ROB);
 
