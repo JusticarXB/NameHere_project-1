@@ -1,5 +1,6 @@
-
+//health
 if(plyr_hlth <= 0) instance_destroy();
+else if(plyr_hlth > 4) plyr_hlth = 4;
 
 #region movement controls
 if(hasControl){
@@ -42,7 +43,7 @@ if(jump || move_up) scr_calculateJump(obj_ROB);
 	vspd+=grv;
 }
 
-//Collision detection
+//Collision detection for block object
 scr_collisionDetection(obj_ROB);
 
 

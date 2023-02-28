@@ -21,6 +21,7 @@ switch(object_index){
 			}
 		
 		}
+		
 		#endregion
 		//Limits platform movement
 		if(x+hspd < xstart-platformEndpoints || x+hspd > xstart+platformEndpoints) platDir *= -1;

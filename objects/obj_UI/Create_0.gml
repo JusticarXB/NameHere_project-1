@@ -2,6 +2,9 @@
 global.itemName = "";
 global.item = spr_noItem;
 
+//to be used by the logic gates
+
+
 //death screen alpha loading
 deathScreen_alpha = 0;
 
