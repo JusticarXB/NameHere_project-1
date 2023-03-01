@@ -45,7 +45,9 @@ if(!global.gameOver){
 			//changes global variables which updates player "inventory"]
 			global.itemName = name;
 			global.item = sprite;
-		
+			
+			if(sprite == spr_battery) global.batteryTimer = room_speed * timer;
+
 			//Destroys Instance 
 			instance_destroy();
 		

@@ -1,9 +1,9 @@
-if(NewX != 0 && NewY != 0){
+if(NewX != 88 && NewY != 90){
 
 	x = NewX;
 	y = NewY;
 	
-	NewX =0;
-	NewY = 0;
+	NewX =88;
+	NewY = 90;
 
 }

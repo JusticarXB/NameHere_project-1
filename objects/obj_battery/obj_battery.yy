@@ -4,7 +4,9 @@
   "name": "obj_battery",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactParent","path":"objects/obj_interactParent/obj_interactParent.yy",},"propertyId":{"name":"timer","path":"objects/obj_interactParent/obj_interactParent.yy",},"value":"30",},
+  ],
   "parent": {
     "name": "items",
     "path": "folders/Objects/items.yy",

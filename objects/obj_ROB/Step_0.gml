@@ -28,7 +28,7 @@ scr_directionalCollision();
 
 if(is_hit){ 
 		alarm[0] = game_get_speed(gamespeed_fps)/4;
-		if(image_alpha > .6)image_alpha -= alarm_get(0)/20;
+		if(image_alpha > .6) image_alpha -= alarm_get(0)/20;
 	}
 
 

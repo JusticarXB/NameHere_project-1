@@ -6,7 +6,7 @@ vspd= 0;
 #endregion
 #region Transition setUp
 
-NewX = 0;
-NewY = 0;
+NewX = 88;
+NewY = 90;
 
 #endregion

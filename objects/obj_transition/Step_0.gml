@@ -26,14 +26,16 @@ if(mode != Trans_Mode.OFF){
 			{
 				mode = Trans_Mode.INTRO;
 				room_goto(target);
-				obj_ROB.hasControl = true;
+				
+				if(instance_exists(obj_ROB)) obj_ROB.hasControl = true;
+				
 				break;
 			}
 			case Trans_Mode.NEXT:
 			{
 				mode = Trans_Mode.INTRO
 				room_goto_next();
-				obj_ROB.hasControl = true
+				if(instance_exists(obj_ROB)) obj_ROB.hasControl = true
 				break;
 			}
 			case Trans_Mode.RESTART:

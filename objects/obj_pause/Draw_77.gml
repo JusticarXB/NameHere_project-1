@@ -66,7 +66,14 @@ if(global.pause) //draw the "frozen" image to screen
 				if(buffer_exists(pauseSurfBuffer)) buffer_delete(pauseSurfBuffer);
 			}
 			
-			if(menuSelection == 0) game_end();
+			if(menuSelection == 0){
+				global.pause = false;
+				instance_activate_all();
+				if(surface_exists(pauseSurf)) surface_free(pauseSurf);
+				if(buffer_exists(pauseSurfBuffer)) buffer_delete(pauseSurfBuffer);
+				scr_slideTransition(Trans_Mode.GOTO, rm_menu);
+				
+			}
 		
 		}
 		
@@ -87,7 +94,7 @@ if(global.pause) //draw the "frozen" image to screen
 
 }
 
-if(keyboard_check_pressed(vk_escape)){ //toggling pause
+if(keyboard_check_pressed(vk_escape) && room != rm_menu){ //toggling pause
 
 	if(!global.pause){
 	

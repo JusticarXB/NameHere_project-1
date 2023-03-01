@@ -7,6 +7,7 @@ item = obj_interactParent;
 hspd = 0;
 vspd = 0;
 
+
 //The switch statement dictates how you change the held item variable
 switch(object_index){
 

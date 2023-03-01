@@ -1,1 +1,1 @@
-global.gameOver = true;
+if(room!=rm_menu) global.gameOver = true;
