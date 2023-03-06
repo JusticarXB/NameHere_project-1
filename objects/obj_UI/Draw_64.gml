@@ -30,6 +30,10 @@ if(room != rm_menu){
 				draw_text_transformed(960,75,global.batteryTimer/room_speed,4,4,0);
 			}
 		#endregion
+		
+		//if out current global item = spr_wires we need to display count in the bottom right corner of the item box
+		//global count should be increased with every new wire picked up
+		
 	#endregion
 	#region Death Screen
 

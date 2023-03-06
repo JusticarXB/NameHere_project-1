@@ -51,6 +51,7 @@
     {"name":"spr_oneWay","order":2,"path":"sprites/spr_oneWay/spr_oneWay.yy",},
     {"name":"spr_EInteract","order":2,"path":"sprites/spr_EInteract/spr_EInteract.yy",},
     {"name":"spr_vertical","order":3,"path":"sprites/spr_vertical/spr_vertical.yy",},
+    {"name":"obj_wires","order":3,"path":"objects/obj_wires/obj_wires.yy",},
     {"name":"obj_logicGate","order":6,"path":"objects/obj_logicGate/obj_logicGate.yy",},
     {"name":"obj_heart","order":1,"path":"objects/obj_heart/obj_heart.yy",},
     {"name":"spr_logicGate","order":7,"path":"sprites/spr_logicGate/spr_logicGate.yy",},

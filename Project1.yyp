@@ -75,6 +75,7 @@
     {"id":{"name":"spr_oneWay","path":"sprites/spr_oneWay/spr_oneWay.yy",},"order":0,},
     {"id":{"name":"spr_EInteract","path":"sprites/spr_EInteract/spr_EInteract.yy",},"order":0,},
     {"id":{"name":"spr_vertical","path":"sprites/spr_vertical/spr_vertical.yy",},"order":0,},
+    {"id":{"name":"obj_wires","path":"objects/obj_wires/obj_wires.yy",},"order":0,},
     {"id":{"name":"obj_rewireTerminal","path":"objects/obj_rewireTerminal/obj_rewireTerminal.yy",},"order":0,},
     {"id":{"name":"spr_battery","path":"sprites/spr_battery/spr_battery.yy",},"order":0,},
     {"id":{"name":"obj_logicGate","path":"objects/obj_logicGate/obj_logicGate.yy",},"order":0,},
