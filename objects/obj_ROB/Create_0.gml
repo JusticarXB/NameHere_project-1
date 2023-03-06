@@ -10,3 +10,9 @@ NewX = 88;
 NewY = 90;
 
 #endregion
+
+//combat
+gun_rotation = 0;
+can_shoot = true;
+
+global.gameOver = false;

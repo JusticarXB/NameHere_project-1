@@ -9,7 +9,5 @@ if(keyboard_check(ord("R")) && global.gameOver){
 		
 		instance_create_layer(88,90,"Instances",obj_ROB);
 		
-	}
-	
-	global.gameOver = false;
+	}	
 }

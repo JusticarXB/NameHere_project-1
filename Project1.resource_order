@@ -23,6 +23,7 @@
     {"name":"interactables","order":13,"path":"folders/Sprites/interactables.yy",},
     {"name":"Menu","order":14,"path":"folders/Sprites/Menu.yy",},
     {"name":"Menu","order":9,"path":"folders/Objects/Menu.yy",},
+    {"name":"Enemies","order":10,"path":"folders/Objects/Enemies.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_spike","order":5,"path":"objects/obj_spike/obj_spike.yy",},
@@ -31,6 +32,8 @@
     {"name":"obj_vertical","order":2,"path":"objects/obj_vertical/obj_vertical.yy",},
     {"name":"obj_oneWay","order":1,"path":"objects/obj_oneWay/obj_oneWay.yy",},
     {"name":"scr_oneWayCollision","order":2,"path":"scripts/scr_oneWayCollision/scr_oneWayCollision.yy",},
+    {"name":"obj_bullet","order":5,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"spr_bullet","order":1,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"spr_noItem","order":3,"path":"sprites/spr_noItem/spr_noItem.yy",},
     {"name":"obj_ROB","order":1,"path":"objects/obj_ROB/obj_ROB.yy",},
     {"name":"spr_goldenHeart","order":2,"path":"sprites/spr_goldenHeart/spr_goldenHeart.yy",},
