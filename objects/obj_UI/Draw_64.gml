@@ -31,8 +31,6 @@ if(room != rm_menu){
 			}
 		#endregion
 		
-		//if out current global item = spr_wires we need to display count in the bottom right corner of the item box
-		//global count should be increased with every new wire picked up
 		
 	#endregion
 	#region Death Screen

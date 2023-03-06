@@ -21,6 +21,4 @@ global.gameOver = false;
 batteryStart = false;
 global.batteryTimer = room_speed*30;
 
-//add global count variable here
-
 //if you add new logic gates like doors that need to be powered with batteries to find the powerful industrial battery

@@ -21,7 +21,6 @@ switch(object_index){
 	break;
 	
 	//copy and pasting all of the information from case batteries to obj_wires and adjusting accordingly
-	//adding a count variable and setting it equal to the global count variable
 	case obj_wires:
 	
 	

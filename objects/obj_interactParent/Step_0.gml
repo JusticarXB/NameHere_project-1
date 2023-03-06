@@ -3,7 +3,7 @@ vspd += grv;
 //collision
 scr_collisionDetection(obj_interactParent);
 
-//to do: if the object is a wire we need to add to the global count variable for wires so that we can collect a certain amount before accomplishing the task
+
 #region Interactability functionality
 if(!global.gameOver){
 	if(distance_to_object(obj_ROB) < obj_ROB.intrct_radius*2){
