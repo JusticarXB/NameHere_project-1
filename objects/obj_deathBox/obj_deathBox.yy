@@ -32,5 +32,5 @@
     "path": "sprites/spr_deathBox/spr_deathBox.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

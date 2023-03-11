@@ -19,23 +19,23 @@ if(!global.gameOver){
 				//checks to see if player has not already added an item to inventory
 				if(global.item != spr_noItem){
 					//checks to see if item that is being held is not the default item
-					if(item != obj_interactParent){
+					if(item != obj_interactParent  && global.object != obj_interactParent){
 						//checks to see if space in front of the playe is empty
 						if(place_empty(x+20*obj_ROB.image_xscale, obj_ROB.y,obj_block)){
 			
-							instance_create_layer(x+20*obj_ROB.image_xscale, obj_ROB.y, "Instances", item);
+							instance_create_layer(x+20*obj_ROB.image_xscale, obj_ROB.y, "Instances", global.object);
 			
 						}
 						//checks to see if space behind the player is empty
 						else if(place_empty(x-20*obj_ROB.image_xscale, obj_ROB.y, obj_ROB)) {
 			
-							instance_create_layer(x-20*obj_ROB.image_xscale,obj_ROB.y,"Instances", item);
+							instance_create_layer(x-20*obj_ROB.image_xscale,obj_ROB.y,"Instances", global.object);
 			
 						} 
 						//just places the item above the player dropping into them this should never have a conflict since the player and item cannot collide
 						else {
 			
-							instance_create_layer(obj_ROB.x,obj_ROB.y - 20, "Instances", item);
+							instance_create_layer(obj_ROB.x,obj_ROB.y - 20, "Instances", global.object);
 			
 						}
 					}
@@ -44,8 +44,10 @@ if(!global.gameOver){
 			#endregion
 		
 			//changes global variables which updates player "inventory"]
+			audio_play_sound(snd_menuBeep,3,false);
 			global.itemName = name;
 			global.item = sprite;
+			global.object = item;
 			
 			if(sprite == spr_battery) global.batteryTimer = room_speed * timer;
 

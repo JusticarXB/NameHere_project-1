@@ -22,7 +22,9 @@ switch(object_index){
 	
 	//copy and pasting all of the information from case batteries to obj_wires and adjusting accordingly
 	case obj_wires:
-	
+		name = "Wires";
+		sprite = spr_wire;
+		item = obj_wires;
 	
 	
 	break;

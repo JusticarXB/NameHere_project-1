@@ -44,6 +44,13 @@ hspd = move * mv_spd;
 
 vspd += grv;
 
+//animation
+
+if(hspd == 0 && !instance_exists(obj_enemyParent)) sprite_index = spr_ROBidle;
+else sprite_index = spr_ROBwalk;
+
+if(instance_exists(obj_enemyParent)) sprite_index = spr_ROBtank;
+
 if(move_left) image_xscale = -1;
 if(move_right) image_xscale = 1;
 
@@ -54,13 +61,17 @@ if(!move_down)scr_oneWayCollision(obj_ROB);
 scr_directionalCollision();
 
 if(is_hit){ 
+		audio_play_sound(snd_plyrHit,2,false);
 		alarm[0] = game_get_speed(gamespeed_fps)/4;
 		if(image_alpha > .6) image_alpha -= alarm_get(0)/20;
 	}
 
 
 //jump collision
-if(move_up) scr_calculateJump(obj_ROB);
+if(move_up){ 
+	audio_play_sound(snd_jump,2,false);
+	scr_calculateJump(obj_ROB);
+	}
 }else {
 	move_up = 0;
 	move_right = 0;
@@ -79,7 +90,8 @@ scr_collisionDetection(obj_ROB);
 #region combat
 
 	if(shoot && can_shoot){
-	
+		
+		
 		#region bullet spawning spot
 		if(gun_rotation == 0) bullet = instance_create_layer( x + sprite_xoffset * image_xscale, y, "Instances", obj_bullet);
 		if(gun_rotation == 45) bullet = instance_create_layer( x + sprite_xoffset * image_xscale, y - sprite_yoffset, "Instances", obj_bullet);
@@ -93,7 +105,9 @@ scr_collisionDetection(obj_ROB);
 		
 		bullet.direction = gun_rotation;
 		bullet.speed = mv_spd + 2;
-			
+		
+		audio_play_sound(snd_pew,2,false);
+		
 		can_shoot = false;
 		alarm[1] = game_get_speed(gamespeed_fps)/2;
 	

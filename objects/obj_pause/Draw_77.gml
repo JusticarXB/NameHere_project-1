@@ -26,6 +26,25 @@ if(global.pause) //draw the "frozen" image to screen
 		draw_set_valign(fa_top);
 		draw_text_transformed(room_width-100,100,"Solar Quest", 8, 8, 0);
 		
+		//drawing objectives
+		for(i = 0; i<objectiveItems; i++){
+		
+			var OBJTXT = objective[i];
+			
+			//if objective has been completed;
+			
+			OBJYStart = room_height - 250 - 45 * i;
+			
+			if( (i == 0 && global.hIW) || (i == 1 && global.panels) || (i==2 && global.converters) || (i==3 && global.batteries) || (i==4 && global.elevator) ) draw_set_color(c_green);
+		
+		
+			draw_set_halign(fa_left);		
+			draw_text_transformed(65, OBJYStart, OBJTXT, 2, 2,0);
+			
+			draw_set_color(c_white);
+			draw_set_halign(fa_right);
+		}
+		
 		
 		//drawing menu options & functionality
 		for(i = 0; i < menuItems; i++){
@@ -45,11 +64,13 @@ if(global.pause) //draw the "frozen" image to screen
 		
 		//navigating the menu
 		if(keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down)){ 
+			audio_play_sound(snd_menuBeep,1,false);
 			if(menuSelection-1 < 0) menuSelection = menuItems-1;
 			else menuSelection --;
 			
 		}
 		else if(keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up)){
+			audio_play_sound(snd_menuBeep,1,false);
 			if(menuSelection+1 > menuItems-1) menuSelection = 0;
 			else menuSelection ++;
 			
@@ -57,7 +78,7 @@ if(global.pause) //draw the "frozen" image to screen
 		
 		//selecting options
 		if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)){
-		
+			audio_play_sound(snd_menuButtons,1,false);
 			if(menuSelection == 1){ 
 	
 				global.pause=false;
@@ -95,7 +116,7 @@ if(global.pause) //draw the "frozen" image to screen
 }
 
 if(keyboard_check_pressed(vk_escape) && room != rm_menu){ //toggling pause
-
+	audio_play_sound(snd_menuBeep,1,false);
 	if(!global.pause){
 	
 		global.pause = true;

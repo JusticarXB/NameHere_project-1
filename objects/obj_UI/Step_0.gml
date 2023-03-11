@@ -7,6 +7,13 @@
 		global.itemName = "";
 		global.item = spr_noItem;
 		global.batteryTimer = -1;
+		global.batteries = false
+		global.elevator = false;
+		global.converters = false;
+		global.panels = false;
+		global.hIW = false;
+		global.timer = 0;
+		global.gameEnd = false;
 	
 		//turning new game off
 		global.newGame = false;
@@ -40,4 +47,24 @@
 	} 
 
 
+#endregion
+
+#region Music
+	if(room == rm_solarRoom && audio_exists(snd_credits)) audio_play_sound(snd_credits,1,false);
+	else audio_stop_sound(snd_credits);
+	if(room == rm_safeRoom && audio_exists(snd_LowIntensity)) audio_play_sound(snd_LowIntensity,1,false);
+	else audio_stop_sound(snd_LowIntensity)
+	if(room == rm_factory && audio_exists(snd_midIntensity)) audio_play_sound(snd_midIntensity,1,false);
+	else audio_stop_sound(snd_midIntensity);
+	if(room == rm_StorageRoom && audio_exists(snd_midIntensity2)) audio_play_sound(snd_midIntensity2,1,false);
+	else audio_stop_sound(snd_midIntensity2);
+	if(room == rm_StorageRoom && audio_exists(snd_HighIntensity)) audio_play_sound(snd_HighIntensity,1,false);
+	else audio_stop_sound(snd_HighIntensity);
+	if(room == rm_solarTower && audio_exists(snd_TitleMusic)) audio_play_sound(snd_TitleMusic,1,false);
+#endregion
+
+#region Timer
+	if(room!=rm_menu && !global.pause && !global.gameOver && !global.gameEnd){
+		global.timer += 1/game_get_speed(gamespeed_fps); 
+	}
 #endregion

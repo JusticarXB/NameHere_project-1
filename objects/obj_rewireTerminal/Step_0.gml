@@ -1,20 +1,27 @@
 if(!global.gameOver){
+	if(distance_to_object(obj_ROB) < obj_ROB.intrct_radius*2){
+	//if item is dropping it doesn't create the E icon prevents a spawning multiple Icons or overlapping icons
+		if(vspd = 0 && place_empty(x,y-25,obj_EIcon)) instance_create_layer(x, y-25, "iconLayer", obj_EIcon);
 
-	if(distance_to_object(obj_ROB) < obj_ROB.intrct_radius*2 && !global.logicGate){
+
 	
-		image_index = 1;
+		if(distance_to_object(obj_ROB) < obj_ROB.intrct_radius && keyboard_check_pressed(ord("E")) && global.object == comparitive){
 	
-		if(distance_to_object(obj_ROB) < obj_ROB.intrct_radius && keyboard_check_pressed(ord("E")) && global.item == spr_battery){
-	
-			global.logicGate = true;
+			activated = true;
 			global.item = spr_noItem;
 			global.itemName = "";
-		
+			global.object = noone;
 	
-		}
-	} else if(image_index = 1 && distance_to_object(obj_ROB) > obj_ROB.intrct_radius*2){
-
-	image_index = 0;
+		} 
 
 	}
 }
+
+vspd+=grv;
+
+image_speed = 0;
+
+if(activated) image_index = 1;
+
+//collision
+scr_collisionDetection(obj_rewireTerminal);

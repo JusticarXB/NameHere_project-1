@@ -35,7 +35,6 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"mv_spd","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"4","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"jmp_spd","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"9","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"plyr_hlth","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"4","varType":1,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"atk_spd","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"intrct_radius","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_hit","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"grv","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":".3","varType":0,},
@@ -44,8 +43,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_ROB",
-    "path": "sprites/spr_ROB/spr_ROB.yy",
+    "name": "spr_ROBwalk",
+    "path": "sprites/spr_ROBwalk/spr_ROBwalk.yy",
   },
   "spriteMaskId": null,
   "visible": true,

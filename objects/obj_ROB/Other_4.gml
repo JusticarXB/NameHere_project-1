@@ -1,9 +1,14 @@
-if(NewX != 88 && NewY != 90){
+if(NewX != 95 && NewY != 245){
 
 	x = NewX;
 	y = NewY;
 	
-	NewX =88;
-	NewY = 90;
+	NewX =95;
+	NewY = 245;
+
+} else if(room!=rm_solarRoom){
+
+	x = NewX;
+	y = NewY;
 
 }
